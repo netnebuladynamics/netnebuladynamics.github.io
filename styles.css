@@ -66,8 +66,6 @@ a.list:hover {
         text-align: center;
         position: absolute;
         font-weight: bold;
-        margin-top: 0;
-        padding: 0.75em 2em;
         text-decoration: none;
     }
     .dropdown-content a{
@@ -110,18 +108,15 @@ a.list:hover {
         display: block;
     }
     .dropdown-content {
-        display: block;
-        text-align: center;
+        display: none;
+        text-align: left;
         position: absolute;
         font-weight: bold;
-        margin-top: 0;
-        padding: 0.75em 2em;
         text-decoration: none;
         z-index: 1;
     }
     .dropdown-content a{
-        display: inline-block;
-        text-align: center;
+        display: block;
         font-weight: bold;
         margin-top: 0;
         padding: 0.75em 2em;
@@ -133,11 +128,13 @@ a.list:hover {
     }
     .dropdownbtn {
         display: block;
+        margin: 0;
         background-color: #d2dde8;
         color: #33475b;
         padding: 16px;
         font-size: 16px;
         border: none;
+        border-radius: 6px;
         cursor: pointer;
     }
     .dropdown:hover .dropdownbtn {
@@ -148,9 +145,6 @@ a.list:hover {
         width: 100%;
     }
 }
-
-
-
 .tagline {
     font-size: 1.2em;
     color: #ddd;
